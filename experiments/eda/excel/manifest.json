@@ -1,0 +1,31 @@
+{
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.1",
+    "mne": "1.12.1",
+    "openpyxl": "3.1.5"
+  },
+  "source": {
+    "file": "58voln_trial001_12.xlsx",
+    "sheet": "Лист1",
+    "samples": 2001,
+    "sfreq_hz": 999.9999999999991,
+    "t_start_s": 0.0,
+    "t_end_s": 2.0,
+    "max_dt_error_s": 1.1102230246251565e-16,
+    "sha256": "daa7b74eb3ec6df7ee489daba0f311e769ea4347d1ca56942838f409ca747e6b"
+  },
+  "n_series": 204,
+  "n_samples": 2001,
+  "spectral_window_samples": 512,
+  "frequency_resolution_hz": 1.9531249999999982,
+  "units": "native export; unverified",
+  "outlier_rule": "abs(y-median) > 6 * 1.4826 * MAD; descriptive flag only",
+  "grouping": "Ward; k=3 fixed; shape features; median/IQR scaling; clipped to ±10",
+  "pelt": {
+    "penalty": 0.02,
+    "min_size": 30
+  }
+}

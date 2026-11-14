@@ -1,0 +1,4944 @@
+[
+  {
+    "case_id": "slope/seed1000/rep0",
+    "method": "CPOP",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 327182,
+      "max_states_per_endpoint": 125,
+      "max_envelope_pieces": 126,
+      "dp_objective": 0.26439499375040265,
+      "objective_error": 1.0547118733938987e-15,
+      "knot_indices": [
+        0,
+        100,
+        200,
+        299
+      ],
+      "knot_values": [
+        0.027813262358624413,
+        1.4847652600143246,
+        -0.7839051689811529,
+        0.792583355091228
+      ]
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep0",
+    "method": "PELT-linear",
+    "breakpoints": [
+      100,
+      198,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8243,
+      "max_candidates": 101,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.2641949693242155,
+      "objective_error": 7.771561172376096e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep0",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      194,
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10484,
+      "max_candidates": 128,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.45019502836102127,
+      "objective_error": 1.1657341758564144e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep0",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      96,
+      202,
+      300
+    ],
+    "params": {
+      "strength": 0.1593802601722355,
+      "lambda_value": 1.1078705122762749,
+      "lambda_max": 6.951114969187816,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.15990733462248893
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.1364133882726376,
+      "duality_gap": 4.8215986758748386e-11,
+      "stationarity_residual": 1.7023437780955275e-14,
+      "raw_knots": [
+        96,
+        97,
+        203
+      ],
+      "raw_knot_count": 3,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep0",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      44,
+      134,
+      172,
+      246,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.98310554003985
+    },
+    "diagnostics": {
+      "cost_evaluations": 5664,
+      "max_candidates": 64,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.98310554003985,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep0",
+    "method": "Rectangles",
+    "breakpoints": [
+      44,
+      134,
+      158,
+      254,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 6111,
+      "max_candidates": 70,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep0",
+    "method": "CPOP",
+    "breakpoints": [
+      146,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 221490,
+      "max_states_per_endpoint": 137,
+      "max_envelope_pieces": 138,
+      "dp_objective": 0.19397877401469785,
+      "objective_error": 1.6930901125533637e-15,
+      "knot_indices": [
+        0,
+        146,
+        299
+      ],
+      "knot_values": [
+        -0.28088928773734956,
+        1.7113574319681826,
+        0.08747971003362665
+      ]
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep0",
+    "method": "PELT-linear",
+    "breakpoints": [
+      144,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8769,
+      "max_candidates": 100,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.1939616207601672,
+      "objective_error": 1.9984014443252818e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep0",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.21747224507317583,
+      "objective_error": 1.942890293094024e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep0",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      144,
+      152,
+      242,
+      300
+    ],
+    "params": {
+      "strength": 0.033240316659536466,
+      "lambda_value": 0.6812513965923797,
+      "lambda_max": 20.494732453065616,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.0983301693021047
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.06384689084402419,
+      "duality_gap": 3.6499260558375823e-10,
+      "stationarity_residual": 4.430063697065563e-13,
+      "raw_knots": [
+        144,
+        153,
+        154,
+        243
+      ],
+      "raw_knot_count": 4,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep0",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      64,
+      102,
+      194,
+      220,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.0478535704737306
+    },
+    "diagnostics": {
+      "cost_evaluations": 5204,
+      "max_candidates": 63,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.0478535704737306,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep0",
+    "method": "Rectangles",
+    "breakpoints": [
+      64,
+      108,
+      194,
+      230,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5638,
+      "max_candidates": 66,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep0",
+    "method": "CPOP",
+    "breakpoints": [
+      196,
+      202,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 196777,
+      "max_states_per_endpoint": 93,
+      "max_envelope_pieces": 97,
+      "dp_objective": 0.3491398324307303,
+      "objective_error": 3.83026943495679e-15,
+      "knot_indices": [
+        0,
+        196,
+        202,
+        299
+      ],
+      "knot_values": [
+        -0.3821531814687887,
+        1.8482099558588023,
+        -1.0125469785888772,
+        -0.9586981877830458
+      ]
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep0",
+    "method": "PELT-linear",
+    "breakpoints": [
+      200,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 7305,
+      "max_candidates": 101,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.22440019756976454,
+      "objective_error": 7.494005416219807e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep0",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.45496434617985,
+      "objective_error": 1.887379141862766e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep0",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      68,
+      150,
+      158,
+      228,
+      300
+    ],
+    "params": {
+      "strength": 0.06141246478327996,
+      "lambda_value": 0.9873941659499798,
+      "lambda_max": 16.078074205854147,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.14251807187687168
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 13,
+      "dual_objective": 0.17885786702937567,
+      "duality_gap": 8.88820961275627e-11,
+      "stationarity_residual": 1.7527239425454977e-13,
+      "raw_knots": [
+        69,
+        151,
+        152,
+        159,
+        162,
+        227,
+        228
+      ],
+      "raw_knot_count": 7,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep0",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.8527937277181312
+    },
+    "diagnostics": {
+      "cost_evaluations": 4358,
+      "max_candidates": 56,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.8527937277181312,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep0",
+    "method": "Rectangles",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 3873,
+      "max_candidates": 49,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep0",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 153707,
+      "max_states_per_endpoint": 34,
+      "max_envelope_pieces": 47,
+      "dp_objective": 0.9971481392911117,
+      "objective_error": 5.551115123125783e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        -0.028822730656278345,
+        0.03766079883719284
+      ]
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep0",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9971481392911117,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep0",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9970683253689091,
+      "objective_error": 6.661338147750939e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep0",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 2.5687658830847755,
+      "lambda_value": 2.3858341022172427,
+      "lambda_max": 0.9287861217434678,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.3443654902892285
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.4985740696455556,
+      "duality_gap": 3.941291737419306e-15,
+      "stationarity_residual": 4.0590360933512315e-15,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep0",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 3.254547854396168
+    },
+    "diagnostics": {
+      "cost_evaluations": 6847,
+      "max_candidates": 77,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 3.254547854396168,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep0",
+    "method": "Rectangles",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5349,
+      "max_candidates": 65,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep0",
+    "method": "CPOP",
+    "breakpoints": [
+      98,
+      198,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 342944,
+      "max_states_per_endpoint": 142,
+      "max_envelope_pieces": 142,
+      "dp_objective": 0.2726685130707007,
+      "objective_error": 4.551914400963142e-15,
+      "knot_indices": [
+        0,
+        98,
+        198,
+        299
+      ],
+      "knot_values": [
+        -0.0881428984217883,
+        1.5060150652306543,
+        -0.7177577357456721,
+        0.8206288186974097
+      ]
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep0",
+    "method": "PELT-linear",
+    "breakpoints": [
+      104,
+      202,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8041,
+      "max_candidates": 98,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.27061695415376985,
+      "objective_error": 5.051514762044462e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep0",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      100,
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10427,
+      "max_candidates": 128,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.45218977904913665,
+      "objective_error": 4.884981308350689e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep0",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      84,
+      96,
+      198,
+      300
+    ],
+    "params": {
+      "strength": 0.07590061662313245,
+      "lambda_value": 0.5085962836865241,
+      "lambda_max": 6.70081886438216,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.07340955032381448
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 13,
+      "dual_objective": 0.07810049943829729,
+      "duality_gap": 7.919685740542803e-11,
+      "stationarity_residual": 2.492265698287796e-13,
+      "raw_knots": [
+        81,
+        85,
+        97,
+        198,
+        199
+      ],
+      "raw_knot_count": 5,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep0",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      34,
+      64,
+      124,
+      170,
+      232,
+      262,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.9909116275568396
+    },
+    "diagnostics": {
+      "cost_evaluations": 5052,
+      "max_candidates": 55,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.9909116275568396,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep0",
+    "method": "Rectangles",
+    "breakpoints": [
+      40,
+      134,
+      170,
+      238,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 6246,
+      "max_candidates": 72,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep0",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 128582,
+      "max_states_per_endpoint": 24,
+      "max_envelope_pieces": 38,
+      "dp_objective": 0.9921749206934766,
+      "objective_error": 3.3306690738754696e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.011154843985080617,
+        -0.03317228351636062
+      ]
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep0",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9921749206934766,
+      "objective_error": 2.220446049250313e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep0",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9918279606610189,
+      "objective_error": 2.220446049250313e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep0",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 9.982764689822393,
+      "lambda_value": 7.369811416375925,
+      "lambda_max": 0.7382535445205455,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 1.0637406512803542
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.4960874603467381,
+      "duality_gap": 1.9373391779708982e-14,
+      "stationarity_residual": 6.262351748276274e-15,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep0",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.069472909349976
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.069472909349976,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep0",
+    "method": "Rectangles",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 9574,
+      "max_candidates": 114,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep0",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 131985,
+      "max_states_per_endpoint": 26,
+      "max_envelope_pieces": 40,
+      "dp_objective": 0.535683254218783,
+      "objective_error": 2.220446049250313e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        -0.0028996484143713475,
+        0.5169544253329369
+      ]
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep0",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5624,
+      "max_candidates": 76,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.535683254218783,
+      "objective_error": 2.220446049250313e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep0",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.5307645552760535,
+      "objective_error": 0.0,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep0",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 1.2423684687351344,
+      "lambda_value": 2.4872190733427493,
+      "lambda_max": 2.001997906365901,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.35899915038200186
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.26784162710939147,
+      "duality_gap": 1.3600232051658168e-14,
+      "stationarity_residual": 1.4332719039389374e-14,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep0",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      48,
+      128,
+      206,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.6470526920205941
+    },
+    "diagnostics": {
+      "cost_evaluations": 8508,
+      "max_candidates": 90,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.6470526920205941,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep0",
+    "method": "Rectangles",
+    "breakpoints": [
+      146,
+      156,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5706,
+      "max_candidates": 74,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep0",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 202663,
+      "max_states_per_endpoint": 31,
+      "max_envelope_pieces": 45,
+      "dp_objective": 0.9978457828063018,
+      "objective_error": 6.661338147750939e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.03161588266985083,
+        -0.03661669963051822
+      ]
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep0",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9978457828063018,
+      "objective_error": 6.661338147750939e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep0",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9975468200844102,
+      "objective_error": 7.771561172376096e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep0",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 2.183262070210396,
+      "lambda_value": 1.356114224536671,
+      "lambda_max": 0.6211412926740331,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.19573822814703187
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.49892289140315116,
+      "duality_gap": 1.4432899320127035e-15,
+      "stationarity_residual": 1.7715863498413142e-15,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep0",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.9538096404554617
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.9538096404554617,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep0",
+    "method": "Rectangles",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep1",
+    "method": "CPOP",
+    "breakpoints": [
+      100,
+      202,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 322176,
+      "max_states_per_endpoint": 118,
+      "max_envelope_pieces": 119,
+      "dp_objective": 0.2686490460981208,
+      "objective_error": 2.4424906541753444e-15,
+      "knot_indices": [
+        0,
+        100,
+        202,
+        299
+      ],
+      "knot_values": [
+        -0.01122711645066471,
+        1.4944051647264103,
+        -0.8187581655273473,
+        0.8519898696219763
+      ]
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep1",
+    "method": "PELT-linear",
+    "breakpoints": [
+      102,
+      204,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8171,
+      "max_candidates": 100,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.26835065256240015,
+      "objective_error": 2.942091015256665e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep1",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      194,
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10473,
+      "max_candidates": 128,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.45724439393241695,
+      "objective_error": 4.440892098500626e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep1",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      98,
+      202,
+      300
+    ],
+    "params": {
+      "strength": 0.17053733123590675,
+      "lambda_value": 1.1965102160026675,
+      "lambda_max": 7.016119035822823,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.1727013738243193
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.1492602277657199,
+      "duality_gap": 2.3152768591216955e-10,
+      "stationarity_residual": 1.1879904070026537e-13,
+      "raw_knots": [
+        97,
+        98,
+        203,
+        204
+      ],
+      "raw_knot_count": 4,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep1",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      50,
+      140,
+      170,
+      252,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.9831512780385127
+    },
+    "diagnostics": {
+      "cost_evaluations": 5560,
+      "max_candidates": 61,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.9831512780385127,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep1",
+    "method": "Rectangles",
+    "breakpoints": [
+      54,
+      136,
+      170,
+      252,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 6550,
+      "max_candidates": 77,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep1",
+    "method": "CPOP",
+    "breakpoints": [
+      144,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 220840,
+      "max_states_per_endpoint": 131,
+      "max_envelope_pieces": 133,
+      "dp_objective": 0.19138681514130937,
+      "objective_error": 1.5265566588595902e-15,
+      "knot_indices": [
+        0,
+        144,
+        299
+      ],
+      "knot_values": [
+        -0.2789177029582136,
+        1.698203311362359,
+        0.10776005756005869
+      ]
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep1",
+    "method": "PELT-linear",
+    "breakpoints": [
+      144,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8763,
+      "max_candidates": 100,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.1913858399988348,
+      "objective_error": 1.2212453270876722e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep1",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.2148162387424988,
+      "objective_error": 3.0808688933348094e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep1",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      142,
+      152,
+      242,
+      300
+    ],
+    "params": {
+      "strength": 0.03149273146146399,
+      "lambda_value": 0.6461079561716373,
+      "lambda_max": 20.516097721223257,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.09325765060531342
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.060203744562753174,
+      "duality_gap": 1.9795252936827268e-10,
+      "stationarity_residual": 1.8180791074018376e-13,
+      "raw_knots": [
+        142,
+        150,
+        152,
+        242
+      ],
+      "raw_knot_count": 4,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep1",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      58,
+      100,
+      194,
+      218,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.0478698072058446
+    },
+    "diagnostics": {
+      "cost_evaluations": 5292,
+      "max_candidates": 65,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.0478698072058446,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep1",
+    "method": "Rectangles",
+    "breakpoints": [
+      58,
+      106,
+      194,
+      222,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5596,
+      "max_candidates": 62,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep1",
+    "method": "CPOP",
+    "breakpoints": [
+      196,
+      202,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 205299,
+      "max_states_per_endpoint": 102,
+      "max_envelope_pieces": 104,
+      "dp_objective": 0.35670123887996363,
+      "objective_error": 1.0824674490095276e-14,
+      "knot_indices": [
+        0,
+        196,
+        202,
+        299
+      ],
+      "knot_values": [
+        -0.393948846804302,
+        1.8577809221255137,
+        -0.9747506983077497,
+        -1.028222745146942
+      ]
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep1",
+    "method": "PELT-linear",
+    "breakpoints": [
+      200,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 7510,
+      "max_candidates": 101,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.23061163403116544,
+      "objective_error": 6.106226635438361e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep1",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.4458270507164471,
+      "objective_error": 8.881784197001252e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep1",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      68,
+      152,
+      160,
+      228,
+      300
+    ],
+    "params": {
+      "strength": 0.06226567769843633,
+      "lambda_value": 1.0085104563827434,
+      "lambda_max": 16.19689199027332,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.1455659458682823
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 13,
+      "dual_objective": 0.17743300271750406,
+      "duality_gap": 2.9630803366487157e-10,
+      "stationarity_residual": 3.481590016285452e-15,
+      "raw_knots": [
+        69,
+        152,
+        157,
+        158,
+        160,
+        162,
+        228,
+        229
+      ],
+      "raw_knot_count": 8,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep1",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.8853453731877531
+    },
+    "diagnostics": {
+      "cost_evaluations": 4346,
+      "max_candidates": 56,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.8853453731877531,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep1",
+    "method": "Rectangles",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 3884,
+      "max_candidates": 49,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep1",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 132040,
+      "max_states_per_endpoint": 24,
+      "max_envelope_pieces": 38,
+      "dp_objective": 0.9987491314391446,
+      "objective_error": 1.1102230246251565e-15,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.026336845694930618,
+        -0.02212315373432077
+      ]
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep1",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9987491314391446,
+      "objective_error": 1.1102230246251565e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep1",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9987413488967072,
+      "objective_error": 9.992007221626409e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep1",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 3.7619397216495947,
+      "lambda_value": 2.90570785531821,
+      "lambda_max": 0.7723961759929714,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.4194028031135946
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.499374565719573,
+      "duality_gap": 3.0531133177191805e-15,
+      "stationarity_residual": 1.5551795962132076e-15,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep1",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 3.274451128865904
+    },
+    "diagnostics": {
+      "cost_evaluations": 7178,
+      "max_candidates": 81,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 3.274451128865904,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep1",
+    "method": "Rectangles",
+    "breakpoints": [
+      100,
+      148,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5857,
+      "max_candidates": 65,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep1",
+    "method": "CPOP",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 317012,
+      "max_states_per_endpoint": 120,
+      "max_envelope_pieces": 122,
+      "dp_objective": 0.26659882794241807,
+      "objective_error": 3.3306690738754696e-16,
+      "knot_indices": [
+        0,
+        100,
+        200,
+        299
+      ],
+      "knot_values": [
+        -0.00273918593228778,
+        1.520371663810949,
+        -0.7275203419077838,
+        0.889941722812637
+      ]
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep1",
+    "method": "PELT-linear",
+    "breakpoints": [
+      84,
+      198,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8030,
+      "max_candidates": 98,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.26457381280610337,
+      "objective_error": 6.106226635438361e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep1",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      196,
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10429,
+      "max_candidates": 127,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.46328233269810676,
+      "objective_error": 7.216449660063518e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep1",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      98,
+      200,
+      300
+    ],
+    "params": {
+      "strength": 0.06901933856591885,
+      "lambda_value": 0.48291205994416475,
+      "lambda_max": 6.9967645297404015,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.06970235195092005
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.07182714090639222,
+      "duality_gap": 3.2546756956186584e-11,
+      "stationarity_residual": 4.144685354472155e-14,
+      "raw_knots": [
+        96,
+        99,
+        201,
+        204
+      ],
+      "raw_knot_count": 4,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep1",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      42,
+      78,
+      120,
+      158,
+      256,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.000841966414992
+    },
+    "diagnostics": {
+      "cost_evaluations": 5425,
+      "max_candidates": 62,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.000841966414992,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep1",
+    "method": "Rectangles",
+    "breakpoints": [
+      54,
+      136,
+      170,
+      242,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 6037,
+      "max_candidates": 68,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep1",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 134879,
+      "max_states_per_endpoint": 28,
+      "max_envelope_pieces": 42,
+      "dp_objective": 0.9999837808765455,
+      "objective_error": 5.551115123125783e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.004865570145024739,
+        0.0069177588598286315
+      ]
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep1",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9999837808765455,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep1",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.999960019428741,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep1",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 11.283463852581946,
+      "lambda_value": 7.278370463151855,
+      "lambda_max": 0.6450475278020568,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 1.050542286540636
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.49999189043827286,
+      "duality_gap": 4.996003610813204e-16,
+      "stationarity_residual": 1.9650080174127282e-15,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep1",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.0913521175673737
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.0913521175673737,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep1",
+    "method": "Rectangles",
+    "breakpoints": [
+      134,
+      170,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 7569,
+      "max_candidates": 83,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep1",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 133989,
+      "max_states_per_endpoint": 28,
+      "max_envelope_pieces": 41,
+      "dp_objective": 0.5510730196344547,
+      "objective_error": 4.440892098500626e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.0006724078110458276,
+        0.5093572810182767
+      ]
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep1",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5556,
+      "max_candidates": 76,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.5510730196344547,
+      "objective_error": 4.440892098500626e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep1",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.5491754595567416,
+      "objective_error": 4.440892098500626e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep1",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 1.8317690582615904,
+      "lambda_value": 2.7531154543721064,
+      "lambda_max": 1.5029817443171052,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.3973779871729636
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.2755365098172275,
+      "duality_gap": 4.285460875053104e-14,
+      "stationarity_residual": 2.0259401795064136e-14,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep1",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      92,
+      204,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.6495576840410895
+    },
+    "diagnostics": {
+      "cost_evaluations": 8760,
+      "max_candidates": 96,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.6495576840410895,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep1",
+    "method": "Rectangles",
+    "breakpoints": [
+      150,
+      156,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5660,
+      "max_candidates": 74,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep1",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 195349,
+      "max_states_per_endpoint": 33,
+      "max_envelope_pieces": 47,
+      "dp_objective": 0.9976031291863214,
+      "objective_error": 5.551115123125783e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.04092257836645486,
+        -0.03312391842134013
+      ]
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep1",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9976031291863214,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep1",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9975062942949675,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep1",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 1.4723531146984417,
+      "lambda_value": 1.0901693522547606,
+      "lambda_max": 0.7404265602942963,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.1573523922466415
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.4988015645931611,
+      "duality_gap": 1.5543122344752192e-15,
+      "stationarity_residual": 1.9622975119815145e-15,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep1",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.976328613752812
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.976328613752812,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep1",
+    "method": "Rectangles",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep2",
+    "method": "CPOP",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 319573,
+      "max_states_per_endpoint": 114,
+      "max_envelope_pieces": 115,
+      "dp_objective": 0.26403394738134267,
+      "objective_error": 9.43689570931383e-16,
+      "knot_indices": [
+        0,
+        100,
+        200,
+        299
+      ],
+      "knot_values": [
+        -0.02655856972967946,
+        1.4957865701268307,
+        -0.8134046412141833,
+        0.8215326341393743
+      ]
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep2",
+    "method": "PELT-linear",
+    "breakpoints": [
+      96,
+      202,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8117,
+      "max_candidates": 98,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.2637548400396284,
+      "objective_error": 1.7763568394002505e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep2",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      194,
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10449,
+      "max_candidates": 127,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.45364038515090294,
+      "objective_error": 1.8318679906315083e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep2",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      96,
+      202,
+      300
+    ],
+    "params": {
+      "strength": 0.13610565489497042,
+      "lambda_value": 0.9522218307913627,
+      "lambda_max": 6.99619594443868,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.13744138258390787
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.12188708595252115,
+      "duality_gap": 9.441164516843514e-11,
+      "stationarity_residual": 1.2711294690437303e-14,
+      "raw_knots": [
+        97,
+        201,
+        202,
+        203
+      ],
+      "raw_knot_count": 4,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep2",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      48,
+      136,
+      172,
+      234,
+      272,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.9866259709027857
+    },
+    "diagnostics": {
+      "cost_evaluations": 5300,
+      "max_candidates": 64,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.9866259709027857,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "slope/seed1000/rep2",
+    "method": "Rectangles",
+    "breakpoints": [
+      48,
+      128,
+      164,
+      252,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 6289,
+      "max_candidates": 72,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep2",
+    "method": "CPOP",
+    "breakpoints": [
+      144,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 223373,
+      "max_states_per_endpoint": 139,
+      "max_envelope_pieces": 139,
+      "dp_objective": 0.19193157657122886,
+      "objective_error": 5.828670879282072e-16,
+      "knot_indices": [
+        0,
+        144,
+        299
+      ],
+      "knot_values": [
+        -0.2851941740100421,
+        1.703010762988998,
+        0.11019608862445629
+      ]
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep2",
+    "method": "PELT-linear",
+    "breakpoints": [
+      148,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8779,
+      "max_candidates": 100,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.19190206126864456,
+      "objective_error": 6.106226635438361e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep2",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.21313594833155577,
+      "objective_error": 1.0547118733938987e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep2",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      142,
+      156,
+      244,
+      300
+    ],
+    "params": {
+      "strength": 0.03134674306956093,
+      "lambda_value": 0.6424326811346661,
+      "lambda_max": 20.494399680025982,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.09272717034732811
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 13,
+      "dual_objective": 0.06058987638836123,
+      "duality_gap": 8.454827116199937e-11,
+      "stationarity_residual": 1.9665692685411074e-14,
+      "raw_knots": [
+        142,
+        143,
+        145,
+        146,
+        156,
+        157,
+        244
+      ],
+      "raw_knot_count": 7,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep2",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      68,
+      104,
+      198,
+      224,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.029694425348052
+    },
+    "diagnostics": {
+      "cost_evaluations": 5263,
+      "max_candidates": 64,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.029694425348052,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "quadratic/seed1000/rep2",
+    "method": "Rectangles",
+    "breakpoints": [
+      60,
+      104,
+      198,
+      232,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5766,
+      "max_candidates": 68,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep2",
+    "method": "CPOP",
+    "breakpoints": [
+      196,
+      202,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 192136,
+      "max_states_per_endpoint": 96,
+      "max_envelope_pieces": 99,
+      "dp_objective": 0.3506106670612286,
+      "objective_error": 3.7192471324942744e-15,
+      "knot_indices": [
+        0,
+        196,
+        202,
+        299
+      ],
+      "knot_values": [
+        -0.4134232632471494,
+        1.8927833326116117,
+        -0.9804613718180623,
+        -1.0226882005546072
+      ]
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep2",
+    "method": "PELT-linear",
+    "breakpoints": [
+      200,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 7382,
+      "max_candidates": 101,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.22573058104114752,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep2",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.44755793841702884,
+      "objective_error": 8.326672684688674e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep2",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      158,
+      230,
+      300
+    ],
+    "params": {
+      "strength": 0.06697788066287681,
+      "lambda_value": 1.0863140925640942,
+      "lambda_max": 16.21899770212041,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.1567959334415909
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.18274942996044077,
+      "duality_gap": 6.770320415405706e-11,
+      "stationarity_residual": 2.7218245018945098e-14,
+      "raw_knots": [
+        157,
+        158,
+        230
+      ],
+      "raw_knot_count": 3,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep2",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.8673370313225715
+    },
+    "diagnostics": {
+      "cost_evaluations": 4352,
+      "max_candidates": 56,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.8673370313225715,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "mean/seed1000/rep2",
+    "method": "Rectangles",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 3918,
+      "max_candidates": 49,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep2",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 130570,
+      "max_states_per_endpoint": 23,
+      "max_envelope_pieces": 36,
+      "dp_objective": 0.9999920005886128,
+      "objective_error": 6.661338147750939e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.012044632536052619,
+        0.00817918740179941
+      ]
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep2",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9999920005886128,
+      "objective_error": 6.661338147750939e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep2",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9961379387684937,
+      "objective_error": 7.771561172376096e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep2",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 1.9551666001543493,
+      "lambda_value": 2.737755011257096,
+      "lambda_max": 1.4002668678162598,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.3951608981811328
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.4999960002943059,
+      "duality_gap": 2.7755575615628914e-16,
+      "stationarity_residual": 3.2849157421965813e-15,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep2",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 3.664344749954208
+    },
+    "diagnostics": {
+      "cost_evaluations": 7371,
+      "max_candidates": 87,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 3.664344749954208,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "variance/seed1000/rep2",
+    "method": "Rectangles",
+    "breakpoints": [
+      100,
+      200,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5218,
+      "max_candidates": 70,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep2",
+    "method": "CPOP",
+    "breakpoints": [
+      98,
+      202,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 315729,
+      "max_states_per_endpoint": 112,
+      "max_envelope_pieces": 112,
+      "dp_objective": 0.2694339873545524,
+      "objective_error": 3.219646771412954e-15,
+      "knot_indices": [
+        0,
+        98,
+        202,
+        299
+      ],
+      "knot_values": [
+        -0.08479801285185795,
+        1.5192924518199562,
+        -0.713514570152399,
+        0.7515852702785406
+      ]
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep2",
+    "method": "PELT-linear",
+    "breakpoints": [
+      102,
+      196,
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 8194,
+      "max_candidates": 100,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.2670457013392218,
+      "objective_error": 2.3869795029440866e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep2",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      200,
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10471,
+      "max_candidates": 128,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.44631152251035466,
+      "objective_error": 5.10702591327572e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep2",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      96,
+      202,
+      300
+    ],
+    "params": {
+      "strength": 0.07307896096044697,
+      "lambda_value": 0.5315287458702462,
+      "lambda_max": 7.273348428666483,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.0767195661275527
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.07749346447407127,
+      "duality_gap": 2.3649596170294274e-11,
+      "stationarity_residual": 4.295066906301326e-15,
+      "raw_knots": [
+        96,
+        97,
+        203,
+        204
+      ],
+      "raw_knot_count": 4,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep2",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      44,
+      140,
+      174,
+      240,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.9817611542746233
+    },
+    "diagnostics": {
+      "cost_evaluations": 5134,
+      "max_candidates": 64,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.9817611542746233,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "ar_slope/seed1000/rep2",
+    "method": "Rectangles",
+    "breakpoints": [
+      44,
+      140,
+      172,
+      240,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 6022,
+      "max_candidates": 69,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep2",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 137820,
+      "max_states_per_endpoint": 29,
+      "max_envelope_pieces": 43,
+      "dp_objective": 0.9978438511640453,
+      "objective_error": 4.440892098500626e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        -0.006731155598316515,
+        0.016894605093658387
+      ]
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep2",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9978438511640453,
+      "objective_error": 4.440892098500626e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep2",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9947339402737888,
+      "objective_error": 3.3306690738754696e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep2",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 3.8354010743473776,
+      "lambda_value": 6.7849966536965365,
+      "lambda_max": 1.7690448853125627,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.9793299111156011
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.4989219255820226,
+      "duality_gap": 9.103828801926284e-15,
+      "stationarity_residual": 1.106818629803552e-14,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep2",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.1530049622090646
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.1530049622090646,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "noise/seed1000/rep2",
+    "method": "Rectangles",
+    "breakpoints": [
+      168,
+      292,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10490,
+      "max_candidates": 133,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep2",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 129101,
+      "max_states_per_endpoint": 26,
+      "max_envelope_pieces": 40,
+      "dp_objective": 0.5523900841711045,
+      "objective_error": 0.0,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.0020192526166789015,
+        0.5048373977097345
+      ]
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep2",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5556,
+      "max_candidates": 76,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.5523900841711046,
+      "objective_error": 1.1102230246251565e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep2",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.5492144661733775,
+      "objective_error": 3.3306690738754696e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep2",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 1.365032655354001,
+      "lambda_value": 2.3888253918185303,
+      "lambda_max": 1.7500133659432664,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.3447972457533604
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.27619504208555223,
+      "duality_gap": 4.3798298321462426e-14,
+      "stationarity_residual": 1.9847838650388638e-14,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep2",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      118,
+      220,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 1.7216947453692664
+    },
+    "diagnostics": {
+      "cost_evaluations": 8262,
+      "max_candidates": 88,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 1.7216947453692664,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "spike/seed1000/rep2",
+    "method": "Rectangles",
+    "breakpoints": [
+      146,
+      152,
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 5717,
+      "max_candidates": 74,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep2",
+    "method": "CPOP",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 203165,
+      "max_states_per_endpoint": 32,
+      "max_envelope_pieces": 45,
+      "dp_objective": 0.9973828499073509,
+      "objective_error": 7.771561172376096e-16,
+      "knot_indices": [
+        0,
+        299
+      ],
+      "knot_values": [
+        0.039500383786544975,
+        -0.03659365297347409
+      ]
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep2",
+    "method": "PELT-linear",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9973828499073509,
+      "objective_error": 7.771561172376096e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep2",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "dp_objective": 0.9973579832210177,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep2",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "strength": 2.9565198289769636,
+      "lambda_value": 1.3083450003281107,
+      "lambda_max": 0.44252874190288577,
+      "min_size": 6,
+      "jump": 2,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.18884333453308388
+    },
+    "diagnostics": {
+      "solver_status": "analytic",
+      "converged": true,
+      "iterations": 0,
+      "dual_objective": 0.498691424953675,
+      "duality_gap": 2.220446049250313e-15,
+      "stationarity_residual": 2.4882439858542327e-16,
+      "raw_knots": [],
+      "raw_knot_count": 0,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep2",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2,
+      "gamma": 0.9512887734693398
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "gamma": 0.9512887734693398,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "oscillation/seed1000/rep2",
+    "method": "Rectangles",
+    "breakpoints": [
+      300
+    ],
+    "params": {
+      "min_size": 6,
+      "jump": 2
+    },
+    "diagnostics": {
+      "cost_evaluations": 10733,
+      "max_candidates": 146,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 2,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "Excel/MEG0813/low-std",
+    "method": "CPOP",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 309293,
+      "max_states_per_endpoint": 48,
+      "max_envelope_pieces": 61,
+      "dp_objective": 0.9403381220861288,
+      "objective_error": 5.551115123125783e-16,
+      "knot_indices": [
+        0,
+        2000
+      ],
+      "knot_values": [
+        -8.910523547038625e-13,
+        8.910523547038626e-13
+      ]
+    }
+  },
+  {
+    "case_id": "Excel/MEG0813/low-std",
+    "method": "PELT-linear",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "dp_objective": 0.9403381220861288,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "Excel/MEG0813/low-std",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "dp_objective": 0.9168479348363681,
+      "objective_error": 2.220446049250313e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "Excel/MEG0813/low-std",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      890,
+      1520,
+      2001
+    ],
+    "params": {
+      "strength": 0.2474750095792961,
+      "lambda_value": 6.753190600657329,
+      "lambda_max": 27.2883739337465,
+      "min_size": 30,
+      "jump": 10,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.37742048787153526
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 15,
+      "dual_objective": 0.45826288793994885,
+      "duality_gap": 9.933215361357384e-11,
+      "stationarity_residual": 1.310159934101579e-13,
+      "raw_knots": [
+        892,
+        1520
+      ],
+      "raw_knot_count": 2,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "Excel/MEG0813/low-std",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10,
+      "gamma": 1.0853136596662347
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "gamma": 1.0853136596662347,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "Excel/MEG0813/low-std",
+    "method": "Rectangles",
+    "breakpoints": [
+      600,
+      1410,
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 18409,
+      "max_candidates": 171,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "Excel/MEG1543/median-std",
+    "method": "CPOP",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 405038,
+      "max_states_per_endpoint": 40,
+      "max_envelope_pieces": 54,
+      "dp_objective": 0.9681061637028726,
+      "objective_error": 5.551115123125783e-16,
+      "knot_indices": [
+        0,
+        2000
+      ],
+      "knot_values": [
+        1.888519800128284e-12,
+        -1.8885198001282853e-12
+      ]
+    }
+  },
+  {
+    "case_id": "Excel/MEG1543/median-std",
+    "method": "PELT-linear",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "dp_objective": 0.9681061637028726,
+      "objective_error": 5.551115123125783e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "Excel/MEG1543/median-std",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "dp_objective": 0.9678679757665395,
+      "objective_error": 4.440892098500626e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "Excel/MEG1543/median-std",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      260,
+      780,
+      1580,
+      2001
+    ],
+    "params": {
+      "strength": 0.4676371076967487,
+      "lambda_value": 4.943152075408962,
+      "lambda_max": 10.57048723048402,
+      "min_size": 30,
+      "jump": 10,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.27626154483814624
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 15,
+      "dual_objective": 0.47307638696344034,
+      "duality_gap": 3.339808429814184e-10,
+      "stationarity_residual": 8.256958484997856e-15,
+      "raw_knots": [
+        256,
+        780,
+        1584
+      ],
+      "raw_knot_count": 3,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "Excel/MEG1543/median-std",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10,
+      "gamma": 1.1716504360751698
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "gamma": 1.1716504360751698,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "Excel/MEG1543/median-std",
+    "method": "Rectangles",
+    "breakpoints": [
+      450,
+      1100,
+      1250,
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 14392,
+      "max_candidates": 118,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "Excel/MEG2043/high-std",
+    "method": "CPOP",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 329814,
+      "max_states_per_endpoint": 39,
+      "max_envelope_pieces": 52,
+      "dp_objective": 0.9994771591293712,
+      "objective_error": 1.5543122344752192e-15,
+      "knot_indices": [
+        0,
+        2000
+      ],
+      "knot_values": [
+        6.79360561282524e-13,
+        -6.793605612825259e-13
+      ]
+    }
+  },
+  {
+    "case_id": "Excel/MEG2043/high-std",
+    "method": "PELT-linear",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "dp_objective": 0.9994771591293713,
+      "objective_error": 1.5543122344752192e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "Excel/MEG2043/high-std",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "dp_objective": 0.9859730124187325,
+      "objective_error": 1.887379141862766e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "Excel/MEG2043/high-std",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      330,
+      850,
+      1050,
+      1650,
+      2001
+    ],
+    "params": {
+      "strength": 0.08512564058933617,
+      "lambda_value": 1.8522297446848208,
+      "lambda_max": 21.758775991130136,
+      "min_size": 30,
+      "jump": 10,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.10351691448203307
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 15,
+      "dual_objective": 0.48631151671368733,
+      "duality_gap": 1.519733228150244e-10,
+      "stationarity_residual": 1.2288791945841426e-13,
+      "raw_knots": [
+        333,
+        849,
+        1051,
+        1651
+      ],
+      "raw_knot_count": 4,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "Excel/MEG2043/high-std",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10,
+      "gamma": 1.1390426600050754
+    },
+    "diagnostics": {
+      "cost_evaluations": 19504,
+      "max_candidates": 196,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "gamma": 1.1390426600050754,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "Excel/MEG2043/high-std",
+    "method": "Rectangles",
+    "breakpoints": [
+      1190,
+      2001
+    ],
+    "params": {
+      "min_size": 30,
+      "jump": 10
+    },
+    "diagnostics": {
+      "cost_evaluations": 16945,
+      "max_candidates": 163,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 10,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "MNE/auditory/left/MEG 0113/first-trial",
+    "method": "CPOP",
+    "breakpoints": [
+      138,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 13732,
+      "max_states_per_endpoint": 48,
+      "max_envelope_pieces": 55,
+      "dp_objective": 0.9773143337855265,
+      "objective_error": 1.1102230246251565e-16,
+      "knot_indices": [
+        0,
+        138,
+        360
+      ],
+      "knot_values": [
+        -1.3335082728076732e-12,
+        6.0829884069753665e-12,
+        -7.95562596045116e-13
+      ]
+    }
+  },
+  {
+    "case_id": "MNE/auditory/left/MEG 0113/first-trial",
+    "method": "PELT-linear",
+    "breakpoints": [
+      24,
+      186,
+      361
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 1300,
+      "max_candidates": 48,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "dp_objective": 0.6490654670088309,
+      "objective_error": 0.0,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "MNE/auditory/left/MEG 0113/first-trial",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      36,
+      361
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 1543,
+      "max_candidates": 55,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "dp_objective": 0.9047729574327135,
+      "objective_error": 0.0,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "MNE/auditory/left/MEG 0113/first-trial",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      36,
+      72,
+      96,
+      126,
+      180,
+      210,
+      240,
+      276,
+      318,
+      361
+    ],
+    "params": {
+      "strength": 0.014304275553332057,
+      "lambda_value": 0.13258366698935947,
+      "lambda_max": 9.268813823883255,
+      "min_size": 19,
+      "jump": 6,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.01744521934070519
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 13,
+      "dual_objective": 0.27159179683563583,
+      "duality_gap": 4.811193110576539e-10,
+      "stationarity_residual": 7.958043946043603e-17,
+      "raw_knots": [
+        16,
+        34,
+        35,
+        72,
+        73,
+        99,
+        127,
+        180,
+        213,
+        238,
+        277,
+        319
+      ],
+      "raw_knot_count": 12,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "MNE/auditory/left/MEG 0113/first-trial",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      66,
+      204,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6,
+      "gamma": 1.4616207039462739
+    },
+    "diagnostics": {
+      "cost_evaluations": 1141,
+      "max_candidates": 35,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "gamma": 1.4616207039462739,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "MNE/auditory/left/MEG 0113/first-trial",
+    "method": "Rectangles",
+    "breakpoints": [
+      42,
+      108,
+      186,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 1018,
+      "max_candidates": 27,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "MNE/auditory/right/MEG 0113/first-trial",
+    "method": "CPOP",
+    "breakpoints": [
+      120,
+      204,
+      228,
+      252,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 11888,
+      "max_states_per_endpoint": 38,
+      "max_envelope_pieces": 45,
+      "dp_objective": 0.911779056578951,
+      "objective_error": 5.551115123125783e-15,
+      "knot_indices": [
+        0,
+        120,
+        204,
+        228,
+        252,
+        360
+      ],
+      "knot_values": [
+        -3.2209675906442407e-12,
+        1.3093325545266733e-11,
+        -1.6760320359830073e-12,
+        2.4984313156103317e-11,
+        1.175032378845991e-14,
+        1.1170691585533707e-11
+      ]
+    }
+  },
+  {
+    "case_id": "MNE/auditory/right/MEG 0113/first-trial",
+    "method": "PELT-linear",
+    "breakpoints": [
+      126,
+      216,
+      240,
+      361
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 853,
+      "max_candidates": 32,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "dp_objective": 0.6893601182805109,
+      "objective_error": 1.9984014443252818e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "MNE/auditory/right/MEG 0113/first-trial",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      361
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 1093,
+      "max_candidates": 36,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "dp_objective": 0.9269822321002442,
+      "objective_error": 1.4432899320127035e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "MNE/auditory/right/MEG 0113/first-trial",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      48,
+      72,
+      120,
+      150,
+      180,
+      228,
+      336,
+      361
+    ],
+    "params": {
+      "strength": 0.015581466441341407,
+      "lambda_value": 0.10741322736675064,
+      "lambda_max": 6.893653288098566,
+      "min_size": 19,
+      "jump": 6,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.014133319390361925
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 13,
+      "dual_objective": 0.23031183847592146,
+      "duality_gap": 4.666805830666476e-10,
+      "stationarity_residual": 1.3097162243624894e-16,
+      "raw_knots": [
+        45,
+        46,
+        74,
+        75,
+        118,
+        119,
+        148,
+        149,
+        181,
+        212,
+        213,
+        230,
+        231,
+        247,
+        248,
+        320,
+        335
+      ],
+      "raw_knot_count": 17,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "MNE/auditory/right/MEG 0113/first-trial",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      66,
+      138,
+      300,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6,
+      "gamma": 1.6300633207349735
+    },
+    "diagnostics": {
+      "cost_evaluations": 1126,
+      "max_candidates": 41,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "gamma": 1.6300633207349735,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "MNE/auditory/right/MEG 0113/first-trial",
+    "method": "Rectangles",
+    "breakpoints": [
+      60,
+      204,
+      240,
+      294,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 908,
+      "max_candidates": 33,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "MNE/visual/left/MEG 0113/first-trial",
+    "method": "CPOP",
+    "breakpoints": [
+      114,
+      138,
+      186,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 12848,
+      "max_states_per_endpoint": 51,
+      "max_envelope_pieces": 58,
+      "dp_objective": 0.7121182221469433,
+      "objective_error": 4.440892098500626e-16,
+      "knot_indices": [
+        0,
+        114,
+        138,
+        186,
+        360
+      ],
+      "knot_values": [
+        2.0962175500883673e-12,
+        -6.90513565408996e-12,
+        3.032256370565267e-12,
+        -9.413655979377997e-12,
+        -6.144084764196604e-13
+      ]
+    }
+  },
+  {
+    "case_id": "MNE/visual/left/MEG 0113/first-trial",
+    "method": "PELT-linear",
+    "breakpoints": [
+      126,
+      180,
+      361
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 1074,
+      "max_candidates": 33,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "dp_objective": 0.637652012076411,
+      "objective_error": 1.2212453270876722e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "MNE/visual/left/MEG 0113/first-trial",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      361
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 1543,
+      "max_candidates": 55,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "dp_objective": 0.6689882081171686,
+      "objective_error": 6.661338147750939e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "MNE/visual/left/MEG 0113/first-trial",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      30,
+      66,
+      114,
+      144,
+      186,
+      234,
+      312,
+      361
+    ],
+    "params": {
+      "strength": 0.013068336296589631,
+      "lambda_value": 0.18497463978721884,
+      "lambda_max": 14.154413812834814,
+      "min_size": 19,
+      "jump": 6,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.02433876839305511
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 13,
+      "dual_objective": 0.22127005482605627,
+      "duality_gap": 1.369570845621837e-10,
+      "stationarity_residual": 1.6204919350837343e-14,
+      "raw_knots": [
+        22,
+        32,
+        68,
+        69,
+        112,
+        142,
+        187,
+        233,
+        234,
+        314
+      ],
+      "raw_knot_count": 10,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "MNE/visual/left/MEG 0113/first-trial",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      48,
+      168,
+      282,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6,
+      "gamma": 1.0572375521856248
+    },
+    "diagnostics": {
+      "cost_evaluations": 1074,
+      "max_candidates": 35,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "gamma": 1.0572375521856248,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "MNE/visual/left/MEG 0113/first-trial",
+    "method": "Rectangles",
+    "breakpoints": [
+      48,
+      126,
+      162,
+      282,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 1003,
+      "max_candidates": 29,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  },
+  {
+    "case_id": "MNE/visual/right/MEG 0113/first-trial",
+    "method": "CPOP",
+    "breakpoints": [
+      318,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "continuous": true,
+      "pruning": "functional lower envelope only",
+      "candidates_generated": 10124,
+      "max_states_per_endpoint": 32,
+      "max_envelope_pieces": 41,
+      "dp_objective": 0.9455631896342992,
+      "objective_error": 4.440892098500626e-16,
+      "knot_indices": [
+        0,
+        318,
+        360
+      ],
+      "knot_values": [
+        -2.1330049736554263e-12,
+        2.8235277665398185e-12,
+        -1.0636032613765066e-11
+      ]
+    }
+  },
+  {
+    "case_id": "MNE/visual/right/MEG 0113/first-trial",
+    "method": "PELT-linear",
+    "breakpoints": [
+      144,
+      174,
+      288,
+      361
+    ],
+    "params": {
+      "degree": 1,
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 789,
+      "max_candidates": 30,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "dp_objective": 0.6893378032266266,
+      "objective_error": 8.881784197001252e-16,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "MNE/visual/right/MEG 0113/first-trial",
+    "method": "PELT-quadratic",
+    "breakpoints": [
+      361
+    ],
+    "params": {
+      "degree": 2,
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 1092,
+      "max_candidates": 40,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "dp_objective": 0.9728756119277151,
+      "objective_error": 1.5543122344752192e-15,
+      "continuous": false
+    }
+  },
+  {
+    "case_id": "MNE/visual/right/MEG 0113/first-trial",
+    "method": "Trend-filter-L1",
+    "breakpoints": [
+      54,
+      150,
+      210,
+      288,
+      324,
+      361
+    ],
+    "params": {
+      "strength": 0.02646675276246775,
+      "lambda_value": 0.1530620384588019,
+      "lambda_max": 5.783181632914852,
+      "min_size": 19,
+      "jump": 6,
+      "knot_tolerance": 1e-05,
+      "noise_multiplier": 0.4,
+      "noise_sd_estimate": 0.02013974190247393
+    },
+    "diagnostics": {
+      "solver_status": "Solved",
+      "converged": true,
+      "iterations": 12,
+      "dual_objective": 0.29103892190316366,
+      "duality_gap": 1.715586006589831e-10,
+      "stationarity_residual": 3.034898721221424e-15,
+      "raw_knots": [
+        57,
+        132,
+        150,
+        168,
+        169,
+        211,
+        212,
+        289,
+        290,
+        324
+      ],
+      "raw_knot_count": 10,
+      "postprocessing": "strongest-curvature NMS; grid snapping; no refit",
+      "exact_segmentation": false,
+      "continuous_trend": true
+    }
+  },
+  {
+    "case_id": "MNE/visual/right/MEG 0113/first-trial",
+    "method": "PELT-RBF",
+    "breakpoints": [
+      84,
+      198,
+      330,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6,
+      "gamma": 1.5916856646600865
+    },
+    "diagnostics": {
+      "cost_evaluations": 990,
+      "max_candidates": 29,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "gamma": 1.5916856646600865,
+      "fit_role": "segment mean for display, not the kernel model"
+    }
+  },
+  {
+    "case_id": "MNE/visual/right/MEG 0113/first-trial",
+    "method": "Rectangles",
+    "breakpoints": [
+      84,
+      138,
+      180,
+      330,
+      361
+    ],
+    "params": {
+      "min_size": 19,
+      "jump": 6
+    },
+    "diagnostics": {
+      "cost_evaluations": 900,
+      "max_candidates": 30,
+      "exact_on_grid": true,
+      "full_sample_grid": false,
+      "jump": 6,
+      "fit_role": "segment mean for display, not the rectangle objective"
+    }
+  }
+]

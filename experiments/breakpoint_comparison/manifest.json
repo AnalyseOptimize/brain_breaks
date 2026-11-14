@@ -1,0 +1,418 @@
+{
+  "selected_parameters": {
+    "CPOP": 0.12,
+    "PELT-RBF": 0.035,
+    "PELT-linear": 0.12,
+    "PELT-quadratic": 0.4,
+    "Rectangles": 0.06,
+    "Trend-filter-L1": 0.4
+  },
+  "calibration_case_ids": [
+    "ar_slope/seed100/rep0",
+    "ar_slope/seed100/rep1",
+    "mean/seed100/rep0",
+    "mean/seed100/rep1",
+    "noise/seed100/rep0",
+    "noise/seed100/rep1",
+    "oscillation/seed100/rep0",
+    "oscillation/seed100/rep1",
+    "quadratic/seed100/rep0",
+    "quadratic/seed100/rep1",
+    "slope/seed100/rep0",
+    "slope/seed100/rep1",
+    "spike/seed100/rep0",
+    "spike/seed100/rep1",
+    "variance/seed100/rep0",
+    "variance/seed100/rep1"
+  ],
+  "test_case_ids": [
+    "ar_slope/seed1000/rep0",
+    "ar_slope/seed1000/rep1",
+    "ar_slope/seed1000/rep2",
+    "mean/seed1000/rep0",
+    "mean/seed1000/rep1",
+    "mean/seed1000/rep2",
+    "noise/seed1000/rep0",
+    "noise/seed1000/rep1",
+    "noise/seed1000/rep2",
+    "oscillation/seed1000/rep0",
+    "oscillation/seed1000/rep1",
+    "oscillation/seed1000/rep2",
+    "quadratic/seed1000/rep0",
+    "quadratic/seed1000/rep1",
+    "quadratic/seed1000/rep2",
+    "slope/seed1000/rep0",
+    "slope/seed1000/rep1",
+    "slope/seed1000/rep2",
+    "spike/seed1000/rep0",
+    "spike/seed1000/rep1",
+    "spike/seed1000/rep2",
+    "variance/seed1000/rep0",
+    "variance/seed1000/rep1",
+    "variance/seed1000/rep2"
+  ],
+  "calibration_lengths": [
+    240
+  ],
+  "test_lengths": [
+    300
+  ],
+  "matching_tolerance_seconds": [
+    0.02
+  ],
+  "calibration_rule": "Equal scenario weights, mean F1; ties: fewer FP/s, stronger regularization",
+  "normalization": "Each method globally standardizes its signal; rectangles use global range",
+  "trend_filter_postprocessing": "curvature threshold 1e-5, grid snapping, min-size NMS; raw optimum kept",
+  "trend_filter_penalty": "lambda=c*sigma_hat*sqrt(n) for mean RSS; sigma_hat=MAD(D2 z)/(.67448975*sqrt(6)); iid-noise scaling is a calibration heuristic",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1",
+    "mne": "1.12.1",
+    "clarabel": "0.11.1"
+  },
+  "cases": [
+    {
+      "case_id": "slope/seed1000/rep0",
+      "source": "synthetic",
+      "scenario": "slope",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "09d8ae6d1fd2dba6ad66c112d8ee55ed99aa37d7bcc226758bd73e3a28a39b84"
+    },
+    {
+      "case_id": "quadratic/seed1000/rep0",
+      "source": "synthetic",
+      "scenario": "quadratic",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "f1831bd32d80071d46507c27ddcf1139fe1833a8e25ab674ecf8c2c33dfddcc7"
+    },
+    {
+      "case_id": "mean/seed1000/rep0",
+      "source": "synthetic",
+      "scenario": "mean",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "6d85aa56efc258916e0196eff65bf2b8148342aa0bcd02c55ed980d449b7c1b8"
+    },
+    {
+      "case_id": "variance/seed1000/rep0",
+      "source": "synthetic",
+      "scenario": "variance",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "cf8f2be61df1eeada1c81eaab3d1bff7954b88b74ef18b5f4cce41c4b5851af4"
+    },
+    {
+      "case_id": "ar_slope/seed1000/rep0",
+      "source": "synthetic",
+      "scenario": "ar_slope",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "fd9209c17326acc1146c7453db882fe6e6001172e942ce9c2a401169f2a40fd3"
+    },
+    {
+      "case_id": "noise/seed1000/rep0",
+      "source": "synthetic",
+      "scenario": "noise",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "0907a50d6762dc84cc18b6238188158ccbe1c2896166066e7c15265762b4e48a"
+    },
+    {
+      "case_id": "spike/seed1000/rep0",
+      "source": "synthetic",
+      "scenario": "spike",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "b5b51b495190cdafca114fa8db96bbf83c64eaae311ac6e12b040c81e559a8c9"
+    },
+    {
+      "case_id": "oscillation/seed1000/rep0",
+      "source": "synthetic",
+      "scenario": "oscillation",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "4b2a78ead660495cb557191cb39eeb3dd9f3f59beab3ac64a7123cad654912d6"
+    },
+    {
+      "case_id": "slope/seed1000/rep1",
+      "source": "synthetic",
+      "scenario": "slope",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "dde5d86e8a4d2a4a2f92ecc3b700e6cd54ce2e680978b7c7bc0f8c76a29be36c"
+    },
+    {
+      "case_id": "quadratic/seed1000/rep1",
+      "source": "synthetic",
+      "scenario": "quadratic",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "808b5ac9dc0ea42c5077883e4bff6d93c46e2c2fb430633e94b23d7a229086c5"
+    },
+    {
+      "case_id": "mean/seed1000/rep1",
+      "source": "synthetic",
+      "scenario": "mean",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "b3d5fc88f99f75f81d924699311b76d6a295ddef3d39739ba6bbcc910a61ae3a"
+    },
+    {
+      "case_id": "variance/seed1000/rep1",
+      "source": "synthetic",
+      "scenario": "variance",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "4ebabb1a7f370fd0eeb197c373a7d6d4865f2872e525b31ab39b49655b093965"
+    },
+    {
+      "case_id": "ar_slope/seed1000/rep1",
+      "source": "synthetic",
+      "scenario": "ar_slope",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "024cf04cdcf5deb276ccae08f5a2505fb59a17850688d37f85ceb8f95a3d0d88"
+    },
+    {
+      "case_id": "noise/seed1000/rep1",
+      "source": "synthetic",
+      "scenario": "noise",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "6dd0396c91119c38f65d481f86fcf9215cf870fe0ceb2aee81091139a8646c4a"
+    },
+    {
+      "case_id": "spike/seed1000/rep1",
+      "source": "synthetic",
+      "scenario": "spike",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "755b1666c791419d83b594b5f897fd2acc6189e7992c89e5493573b9f490f710"
+    },
+    {
+      "case_id": "oscillation/seed1000/rep1",
+      "source": "synthetic",
+      "scenario": "oscillation",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "5f5fb64c92b6582792fc95ba042c4ed7b5ce1dcf669b76f65b2968d17d6db8b7"
+    },
+    {
+      "case_id": "slope/seed1000/rep2",
+      "source": "synthetic",
+      "scenario": "slope",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "0c59108d0b2cd1eb2c587999c92ea447467d6e61483df86b8800ba1c3babbd13"
+    },
+    {
+      "case_id": "quadratic/seed1000/rep2",
+      "source": "synthetic",
+      "scenario": "quadratic",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "33e2100b5b2ea4170ad3520267055aeb06b2b56ac0649689058c587089b16fe7"
+    },
+    {
+      "case_id": "mean/seed1000/rep2",
+      "source": "synthetic",
+      "scenario": "mean",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "5f6298bba94871de64133c9f6d00aff09f6581399a449444edb35ddd6596e577"
+    },
+    {
+      "case_id": "variance/seed1000/rep2",
+      "source": "synthetic",
+      "scenario": "variance",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "786df89e42abb861095253c456013a0ff9bc507618679f0ae518f8e44d064881"
+    },
+    {
+      "case_id": "ar_slope/seed1000/rep2",
+      "source": "synthetic",
+      "scenario": "ar_slope",
+      "n_samples": 300,
+      "true_breakpoints": [
+        100,
+        200
+      ],
+      "markers_s": null,
+      "signal_sha256": "bd3f2dba3c821c79f45fd6670a5ca2f2eb46d50ccd68f167e5c9f0069e0b1e9b"
+    },
+    {
+      "case_id": "noise/seed1000/rep2",
+      "source": "synthetic",
+      "scenario": "noise",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "e122656485b8a5047ec13fe6a5295567bbb66a7507eac03ca079fd365d2bbd2c"
+    },
+    {
+      "case_id": "spike/seed1000/rep2",
+      "source": "synthetic",
+      "scenario": "spike",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "0acae31ad170de02be3b84759733f8ab425a1447940a55501ba611a86ae3322a"
+    },
+    {
+      "case_id": "oscillation/seed1000/rep2",
+      "source": "synthetic",
+      "scenario": "oscillation",
+      "n_samples": 300,
+      "true_breakpoints": [],
+      "markers_s": null,
+      "signal_sha256": "5f92e5bbd5a55907da864d3e3d91bab030f4065af18ef7989735b450e99432f7"
+    },
+    {
+      "case_id": "Excel/MEG0813/low-std",
+      "source": "Excel",
+      "scenario": "unlabeled",
+      "n_samples": 2001,
+      "true_breakpoints": null,
+      "markers_s": [
+        0.495,
+        0.662
+      ],
+      "signal_sha256": "219649b1483fa6174f3717f1e5417b0aac7247c5e0b2d41c638d0cad58cc3d2e"
+    },
+    {
+      "case_id": "Excel/MEG1543/median-std",
+      "source": "Excel",
+      "scenario": "unlabeled",
+      "n_samples": 2001,
+      "true_breakpoints": null,
+      "markers_s": [
+        0.495,
+        0.662
+      ],
+      "signal_sha256": "2c65b9154b8657dba8bb93c100d4e7f5dc4c66056741d9fa58d34cbcfb932386"
+    },
+    {
+      "case_id": "Excel/MEG2043/high-std",
+      "source": "Excel",
+      "scenario": "unlabeled",
+      "n_samples": 2001,
+      "true_breakpoints": null,
+      "markers_s": [
+        0.495,
+        0.662
+      ],
+      "signal_sha256": "0b4b6cdcc533f4e7b66bcf0e00b00121f96ab3f5eac3edebe85f8e033eebc079"
+    },
+    {
+      "case_id": "MNE/auditory/left/MEG 0113/first-trial",
+      "source": "MNE",
+      "scenario": "unlabeled",
+      "n_samples": 361,
+      "true_breakpoints": null,
+      "markers_s": [
+        0.0
+      ],
+      "signal_sha256": "ad0f665b63890e8b770d90763af90d18f909c9b796c0d9065f1310f3f85bd10d"
+    },
+    {
+      "case_id": "MNE/auditory/right/MEG 0113/first-trial",
+      "source": "MNE",
+      "scenario": "unlabeled",
+      "n_samples": 361,
+      "true_breakpoints": null,
+      "markers_s": [
+        0.0
+      ],
+      "signal_sha256": "3101790130ef43de28bcfd93681e5ed784726b8371772bf66fefda494b8b0d5f"
+    },
+    {
+      "case_id": "MNE/visual/left/MEG 0113/first-trial",
+      "source": "MNE",
+      "scenario": "unlabeled",
+      "n_samples": 361,
+      "true_breakpoints": null,
+      "markers_s": [
+        0.0
+      ],
+      "signal_sha256": "7d6e71a8ae7752b12e3b58061ec990ec9418db72669cebc08685340f986670a6"
+    },
+    {
+      "case_id": "MNE/visual/right/MEG 0113/first-trial",
+      "source": "MNE",
+      "scenario": "unlabeled",
+      "n_samples": 361,
+      "true_breakpoints": null,
+      "markers_s": [
+        0.0
+      ],
+      "signal_sha256": "700d1860eaf18596e533cd88864260c16b005cf88431f4aacc26670b6e7c15b6"
+    }
+  ]
+}

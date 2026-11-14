@@ -1,0 +1,28 @@
+{
+  "n_epochs": 289,
+  "n_channels": 376,
+  "n_rows": 108664,
+  "sfreq_hz": 600.614990234375,
+  "tmin_s": -0.09989760657919393,
+  "tmax_s": 0.49948803289596966,
+  "bads": [
+    "MEG 2443",
+    "EEG 053"
+  ],
+  "event_id": {
+    "auditory/left": 1,
+    "auditory/right": 2,
+    "visual/left": 3,
+    "visual/right": 4
+  },
+  "preprocessing": "Existing load_sample_epochs: MEG/EEG bandpass 1–40 Hz, baseline (None,0), default MNE projectors; EOG/stim are not physiological data picks for filtering",
+  "comparisons": "Known bads omitted from condition summaries, retained in per-series CSV and inventory",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.1",
+    "mne": "1.12.1"
+  },
+  "seed": 42
+}
