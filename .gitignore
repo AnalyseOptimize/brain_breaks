@@ -7,3 +7,6 @@ MNE-sample-data/
 MNE-sample-data-*.tar.gz
 figures/
 data/archives/*.zip
+# Private recording and locally executed notebook/results.
+/data/excel-data/2085plus16GradOnly.xlsx
+/experiments/gradient_window/

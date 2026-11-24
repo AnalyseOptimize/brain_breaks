@@ -137,16 +137,18 @@ def load_xlsx_series(
     path: str,
     channel_names: Optional[list[str]] = None,
     trial_label: Optional[str] = None,
+    *,
+    window_row: Optional[int] = None,
 ) -> list[dict]:
     """Load single-trial MEG/EEG series from a collaborator Excel export.
 
     Expects the "sideways" layout the collaborators use:
 
-    * column A holds row labels;
+    * column A holds row labels, or sensor IDs with row labels in B;
     * the ``Time`` row gives the time axis in seconds, one sample per column;
-    * every other row is one channel (label in column A, samples across the
-      remaining columns);
-    * stimulus rows (label starting with ``STI``) are skipped.
+    * channel samples follow the label column;
+    * stimulus rows (label starting with ``STI``) and the explicitly selected
+      annotation row are skipped as channels.
 
     The sampling frequency is inferred from the ``Time`` row. Returns the same
     list-of-dicts structure as :func:`select_series`, so the segmentation and
@@ -162,6 +164,13 @@ def load_xlsx_series(
         every channel in the file, in sheet order.
     trial_label:
         Short tag used in plot titles. Defaults to the file stem.
+    window_row:
+        Optional 1-based Excel row whose nonempty numeric sample cells mark
+        the selected interval (including zero and negative values). It must
+        mark one contiguous interval. The row is metadata, never a channel.
+        Both endpoints are included; absolute times are preserved. Returned
+        ``sample_start``/``sample_stop`` refer to the original signal [s,e),
+        and ``window_values`` retains the annotation without assuming units.
 
     Returns
     -------
@@ -171,23 +180,45 @@ def load_xlsx_series(
     """
     if trial_label is None:
         trial_label = os.path.splitext(os.path.basename(path))[0]
+    if window_row is not None and (
+        isinstance(window_row, (bool, np.bool_))
+        or not isinstance(window_row, (int, np.integer)) or window_row < 2
+    ):
+        raise ValueError("window_row must be a 1-based integer >= 2")
 
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
-    ws = wb.active
-
     times = None
     channels: dict[str, np.ndarray] = {}
-    for row in ws.iter_rows(values_only=True):
-        label = row[0]
-        if label is None:
-            continue
-        if label == "Time":
-            times = _cells_to_floats(row[1:])
-        elif str(label).startswith("STI"):
-            continue  # stimulus/marker row, not a data channel
-        else:
-            channels[str(label)] = _cells_to_floats(row[1:])
-    wb.close()
+    sensor_ids = {}
+    annotation = None
+    label_column = None
+    requested = set(channel_names) if channel_names is not None else None
+    try:
+        for row_number, row in enumerate(wb.active.iter_rows(values_only=True), 1):
+            # Determine the layout from Time, not from numeric sensor IDs.
+            if label_column is None:
+                candidates = [i for i, value in enumerate(row[:2]) if value == "Time"]
+                if not candidates:
+                    continue
+                label_column = candidates[0]
+                times = _cells_to_floats(row[label_column + 1:])
+                continue
+            if row_number == window_row:
+                annotation = _cells_to_floats(row[label_column + 1:])
+                continue
+            label = row[label_column]
+            if label is None or str(label).startswith("STI"):
+                continue
+            name = str(label)
+            if requested is not None and name not in requested:
+                continue
+            if name in channels:
+                raise ValueError(f"Duplicate channel {name!r}")
+            channels[name] = _cells_to_floats(row[label_column + 1:])
+            if label_column == 1:
+                sensor_ids[name] = row[0]
+    finally:
+        wb.close()
 
     if times is None:
         raise ValueError(f"No 'Time' row found in {path}")
@@ -196,21 +227,50 @@ def load_xlsx_series(
     finite = np.flatnonzero(np.isfinite(times))
     n = int(finite[-1]) + 1 if finite.size else 0
     times = times[:n]
-    sfreq = 1.0 / np.median(np.diff(times))
+    steps = np.diff(times)
+    if n < 2 or not np.isfinite(times).all() or np.any(steps <= 0):
+        raise ValueError("Time must contain >=2 finite, increasing samples")
+    step = float(np.median(steps))
+    if not np.allclose(steps, step, rtol=1e-5, atol=1e-12):
+        raise ValueError("Time must be uniformly sampled")
+    sfreq = 1.0 / step
+    start, stop = 0, n
+    if window_row is not None:
+        if annotation is None:
+            raise ValueError(f"Window row {window_row} not found")
+        if np.isinf(annotation).any():
+            raise ValueError("Window annotation must be finite")
+        marked = np.flatnonzero(np.isfinite(annotation))
+        if len(marked) < 2 or np.any(np.diff(marked) != 1):
+            raise ValueError("Window row must mark one contiguous interval with >=2 samples")
+        start, stop = int(marked[0]), int(marked[-1]) + 1
+        if stop > n:
+            raise ValueError("Window annotation extends beyond Time")
 
     names = channel_names if channel_names is not None else list(channels)
+    missing = set(names) - channels.keys()
+    if missing:
+        raise ValueError(f"Channels not found: {sorted(missing)}")
     series_list = []
     for name in names:
+        values = channels[name][start:stop]
+        if len(values) != stop-start or not np.isfinite(values).all():
+            raise ValueError(f"Channel {name!r} has missing/nonfinite selected samples")
         series_list.append(
             {
-                "signal": channels[name][:n],
-                "times": times,
+                "signal": values,
+                "times": times[start:stop].copy(),
                 "sfreq": sfreq,
                 "epoch_idx": 0,  # one trial per file
                 "channel_name": name,
                 "label": f"{trial_label} / {name}",
             }
         )
+        if name in sensor_ids:
+            series_list[-1]["sensor_id"] = sensor_ids[name]
+        if window_row is not None:
+            series_list[-1].update(
+                window_row=int(window_row), sample_start=start, sample_stop=stop,
+                window_values=annotation[start:stop].copy(),
+            )
     return series_list
-
-
